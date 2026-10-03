@@ -1,0 +1,170 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #FCE4EC;
+    color: #555;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Encabezado */
+.encabezado {
+    background: white;
+    padding: 15px 8%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.encabezado > img {
+    width: 45px;
+    height: 45px;
+}
+
+.titulo-header h1,
+.encabezado h1 {
+    color: #AD1457;
+    font-size: 23px;
+}
+
+.encabezado p {
+    color: #777;
+}
+
+/* Navegación */
+.navegacion {
+    background: #AD1457;
+    padding: 10px;
+}
+
+.navegacion ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Inicio de sesión */
+.seccion-login {
+    display: flex;
+    justify-content: center;
+    padding: 35px 20px;
+}
+
+.login-card {
+    width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.logo-login {
+    width: 40px;
+    height: 40px;
+}
+
+.login-card h2,
+.seccion h2,
+.aside h2 {
+    color: #AD1457;
+}
+
+.roles {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.roles a {
+    padding: 8px;
+    background: #FFF0F5;
+    color: #AD1457;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #F8BBD0;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #EC407A;
+    color: white;
+}
+
+/* Secciones */
+.seccion {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.tarjeta h3 {
+    color: #880E4F;
+}
+
+.aside {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+}
+
+.aside ol {
+    padding-left: 25px;
+}
+
+/* Pie de página */
+.footer {
+    background: #AD1457;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
